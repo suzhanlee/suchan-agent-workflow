@@ -16,12 +16,22 @@
       "description": "ATDD 테스트 실행 Hook",
       "command": "./gradlew test --tests \"*Cucumber*\"",
       "trigger": "manual"
+    },
+    "lesson-stop": {
+      "description": "Project study phase transition and state management",
+      "command": "bash .claude/scripts/lesson-hook.sh",
+      "trigger": "afterSkill"
     }
   },
   "skills": {
     "atdd-generate": {
       "hooks": {
         "onStop": "atdd-stop"
+      }
+    },
+    "study-project": {
+      "hooks": {
+        "onStop": "lesson-stop"
       }
     }
   }
