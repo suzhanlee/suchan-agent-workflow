@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Skill(hoyeon:open)",
+      "Skill(hoyeon:execute)"
+    ]
+  },
+  "hooks": {
+    "atdd-stop": {
+      "description": "ATDD 단계 전이 자동화 Hook",
+      "command": "bash .claude/scripts/atdd-hook.sh",
+      "trigger": "afterSkill"
+    },
+    "atdd-test": {
+      "description": "ATDD 테스트 실행 Hook",
+      "command": "./gradlew test --tests \"*Cucumber*\"",
+      "trigger": "manual"
+    }
+  },
+  "skills": {
+    "atdd-generate": {
+      "hooks": {
+        "onStop": "atdd-stop"
+      }
+    }
+  }
+}

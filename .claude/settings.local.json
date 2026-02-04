@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Skill(hoyeon:open)",
+      "Skill(hoyeon:execute)",
+      "Bash(test:*)",
+      "Bash(python -m json.tool:*)",
+      "Bash(python:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(for:*)",
+      "Bash(do head:*)",
+      "Bash(exit:*)",
+      "Bash(done)",
+      "Bash(do grep:*)",
+      "Bash(bash -n:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

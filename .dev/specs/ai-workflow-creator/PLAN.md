@@ -261,10 +261,10 @@ atdd-generate 스킬
 **Outputs:** `.claude/skills/atdd-init/SKILL.md`
 
 **Steps:**
-- [ ] SKILL.md frontmatter 작성 (name, description, allowed-tools)
-- [ ] 스킬 동작 흐름 문서화
-- [ ] 사용자 입력 가이드 작성
-- [ ] atdd-criteria-generator 에이전트 호출 방법 정의
+- [x] SKILL.md frontmatter 작성 (name, description, allowed-tools)
+- [x] 스킬 동작 흐름 문서화
+- [x] 사용자 입력 가이드 작성
+- [x] atdd-criteria-generator 에이전트 호출 방법 정의
 
 **Must NOT do:**
 - git 명령어 실행
@@ -303,13 +303,13 @@ risk: LOW
 **Dependencies:** TODO 1
 
 **Steps:**
-- [ ] SKILL.md frontmatter 작성
-- [ ] 스킬 동작 흐름 문서화 (Test → Code → Refactor)
-- [ ] atdd-test-writer, atdd-code-writer 호출 방법 정의
-- [ ] 단계별 승인 프로세스 정의
-- [ ] 테스트 실행 명령어 정의 (`./gradlew test`)
-- [ ] Stop hook 작성 (단계 전이 자동화)
-- [ ] settings.json에 hook 등록
+- [x] SKILL.md frontmatter 작성
+- [x] 스킬 동작 흐름 문서화 (Test → Code → Refactor)
+- [x] atdd-test-writer, atdd-code-writer 호출 방법 정의
+- [x] 단계별 승인 프로세스 정의
+- [x] 테스트 실행 명령어 정의 (`./gradlew test`)
+- [x] Stop hook 작성 (단계 전이 자동화)
+- [x] settings.json에 hook 등록
 
 **Must NOT do:**
 - git 명령어 실행
@@ -348,11 +348,11 @@ risk: LOW
 **Dependencies:** TODO 1
 
 **Steps:**
-- [ ] 에이전트 frontmatter 작성 (model: sonnet, role: criteria-generator)
-- [ ] User Story → Gherkin 변환 프롬프트 작성
-- [ ] Given-When-Then 패턴 가이드
-- [ ] Scenario Outline 지원
-- [ ] Background 섹션 지원
+- [x] 에이전트 frontmatter 작성 (model: sonnet, role: criteria-generator)
+- [x] User Story → Gherkin 변환 프롬프트 작성
+- [x] Given-When-Then 패턴 가이드
+- [x] Scenario Outline 지원
+- [x] Background 섹션 지원
 
 **Must NOT do:**
 - git 명령어 실행
@@ -393,14 +393,14 @@ risk: MEDIUM
 **Dependencies:** TODO 2
 
 **Steps:**
-- [ ] 에이전트 frontmatter 작성 (model: sonnet, role: test-writer)
-- [ ] .feature 파싱 프롬프트 작성
-- [ ] Step Definitions 생성 (@Given, @When, @Then)
-- [ ] REST Assured 패턴 적용 (given-when-then)
-- [ ] JPA @Before 데이터 설정 (repository.save())
-- [ ] @SpringBootTest 설정 + @LocalServerPort
-- [ ] MySQL Testcontainers 설정 (@Testcontainers, MySQLContainer)
-- [ ] AssertJ assertThat 사용
+- [x] 에이전트 frontmatter 작성 (model: sonnet, role: test-writer)
+- [x] .feature 파싱 프롬프트 작성
+- [x] Step Definitions 생성 (@Given, @When, @Then)
+- [x] REST Assured 패턴 적용 (given-when-then)
+- [x] JPA @Before 데이터 설정 (repository.save())
+- [x] @SpringBootTest 설정 + @LocalServerPort
+- [x] MySQL Testcontainers 설정 (@Testcontainers, MySQLContainer)
+- [x] AssertJ assertThat 사용
 
 **Must NOT do:**
 - git 명령어 실행
@@ -449,14 +449,14 @@ risk: MEDIUM
 **Dependencies:** TODO 4
 
 **Steps:**
-- [ ] 에이전트 frontmatter 작성 (model: sonnet, role: code-writer)
-- [ ] Test 실패 분석 프롬프트 작성
-- [ ] Entity 생성 (JPA annotations, @Entity, @Id, @Column)
-- [ ] Service 생성 (interface + impl)
-- [ ] Controller 생성 (@RestController, DTOs, @RequestMapping)
-- [ ] TDD 원칙: 기본 동작 코드만 (과잉 설계 방지)
-- [ ] Refactoring 제안 (코드 개선 안내)
-- [ ] 테스트 실행 및 결과 확인 (`./gradlew test`)
+- [x] 에이전트 frontmatter 작성 (model: sonnet, role: code-writer)
+- [x] Test 실패 분석 프롬프트 작성
+- [x] Entity 생성 (JPA annotations, @Entity, @Id, @Column)
+- [x] Service 생성 (interface + impl)
+- [x] Controller 생성 (@RestController, DTOs, @RequestMapping)
+- [x] TDD 원칙: 기본 동작 코드만 (과잉 설계 방지)
+- [x] Refactoring 제안 (코드 개선 안내)
+- [x] 테스트 실행 및 결과 확인 (`./gradlew test`)
 
 **Must NOT do:**
 - git 명령어 실행
@@ -506,11 +506,11 @@ risk: MEDIUM
 **Dependencies:** TODO 2
 
 **Steps:**
-- [ ] Testcontainers 의존성 추가 (build.gradle 또는 pom.xml)
-- [ ] MySQL Testcontainers 설정 예시 작성
-- [ ] Singleton 패턴으로 성능 최적화 가이드
-- [ ] @Testcontainers 어노테이션 사용 예시
-- [ ] MySQLContainer 빈 설정 예시
+- [x] Testcontainers 의존성 추가 (build.gradle 또는 pom.xml)
+- [x] MySQL Testcontainers 설정 예시 작성
+- [x] Singleton 패턴으로 성능 최적화 가이드
+- [x] @Testcontainers 어노테이션 사용 예시
+- [x] MySQLContainer 빈 설정 예시
 
 **Must NOT do:**
 - 사용자의 build.gradle/pom.xml을 직접 수정 (가이드만 제공)
@@ -546,14 +546,14 @@ risk: MEDIUM
 **Outputs:** 검증 결과
 
 **Steps:**
-- [ ] SKILL.md 파일 존재 확인 (2개)
-- [ ] 에이전트 파일 존재 확인 (3개)
-- [ ] YAML frontmatter 유효성 확인
-- [ ] Cucumber feature 파일 생성 테스트
-- [ ] Glue code 생성 테스트
-- [ ] Production 코드 생성 테스트
-- [ ] 테스트 실행 가능성 확인 (`./gradlew test`)
-- [ ] MySQL Testcontainers 연동 확인
+- [x] SKILL.md 파일 존재 확인 (2개)
+- [x] 에이전트 파일 존재 확인 (3개)
+- [x] YAML frontmatter 유효성 확인
+- [x] Cucumber feature 파일 생성 테스트
+- [x] Glue code 생성 테스트
+- [x] Production 코드 생성 테스트
+- [x] 테스트 실행 가능성 확인 (`./gradlew test`)
+- [x] MySQL Testcontainers 연동 확인
 
 **Must NOT do:**
 - git 명령어 실행
