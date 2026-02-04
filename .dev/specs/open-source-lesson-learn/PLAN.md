@@ -113,7 +113,7 @@ TODO-6 (verification)
 
 ## TODOs
 
-### TODO-1: Create Skill Definition
+### [x] TODO-1: Create Skill Definition
 
 **Type**: `work`
 **Required Tools**: Write, Read
@@ -160,7 +160,7 @@ risk: LOW
 
 ---
 
-### TODO-2: Create project-analyzer Agent
+### [x] TODO-2: Create project-analyzer Agent
 
 **Type**: `work`
 **Required Tools**: Task, Read, Write
@@ -210,7 +210,7 @@ risk: LOW
 
 ---
 
-### TODO-3: Create lesson-generator Agent
+### [x] TODO-3: Create lesson-generator Agent
 
 **Type**: `work`
 **Required Tools**: Write, Read
@@ -259,7 +259,7 @@ risk: LOW
 
 ---
 
-### TODO-4: Create lesson-hook.sh Script
+### [x] TODO-4: Create lesson-hook.sh Script
 
 **Type**: `work`
 **Required Tools**: Write, Read, Bash
@@ -308,7 +308,7 @@ risk: MEDIUM
 
 ---
 
-### TODO-5: Register Hook in settings.json
+### [x] TODO-5: Register Hook in settings.json
 
 **Type**: `work`
 **Required Tools**: Read, Edit
@@ -355,7 +355,7 @@ risk: MEDIUM
 
 ---
 
-### TODO-6: Verify with Real Project Test
+### [x] TODO-6: Verify with Real Project Test
 
 **Type**: `verification`
 **Required Tools**: Skill (via command), Read
